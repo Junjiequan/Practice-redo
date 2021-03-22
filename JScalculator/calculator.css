@@ -93,7 +93,7 @@ button:nth-child(17){
     font-size:1.6rem;
     font-weight:bold;
     transition: all 0.2s ease-in-out;
-    color:#000;
+    color:#001;
 }
 .type-part :nth-child(3):hover,
 .type-part :nth-child(4):hover,
