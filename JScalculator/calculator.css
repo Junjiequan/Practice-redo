@@ -7,6 +7,9 @@ body{
     font-family: 'Kanit', sans-serif;
     background:wheat;
 }
+*:focus{
+    outline:0;
+}
 .backGround{
     background: linear-gradient(-145deg, #659999, #f4791f);
     height:100vh;
