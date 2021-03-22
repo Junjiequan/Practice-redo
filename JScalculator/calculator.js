@@ -47,7 +47,7 @@ const keyBoardOperator = () =>{
                         } else {
                             printOutputNum(result);
                             printPrevNumber('');
-                            outputNum.classList.add('occupied');
+                            document.getElementById('output').classList.add('occupied');
                         }
                     }  
                  }  else {
