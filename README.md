@@ -1,1 +1,32 @@
 # Practice-redo
+able to follow tutorials doesn't mean you know how to build it from scratch. So, I decided to redo all the practices I have done.
+
+However, for my current skill level it is unrealastic to create apps completely from scratch without referencing to any frame and logic of an app. So, the best way I can think of is, watch tutorial first, then customize the code and add new concepts as much as I can. 
+
+This way, I believe is the most effective method for me to improve.
+
+
+## Rebuilt-projects display
+>[Calculator(JS)](https://a331998513.github.io/Practice-redo/JScalculator/)  |  
+
+## My version vs tutorial  _(code comparison)_
+>[Calculator(JS)](https://github.com/a331998513/Practice-redo/blob/main/JScalculator/calculator.js) VS [Tutorial](https://github.com/abarna-codespot/A-simple-Calculator/blob/master/script.js) 
+
+
+
+## Challenges
+**_with Calculator_**
+
+The biggest challenge was to prevent new numbers to merge with output results. 
+
+Problem example:
+```
+1 + 1 = 2,    1 = input / 2 = output 
+In this scenario, click 3 will change output and display 23 
+```
+Solution:
+```
+1. add classlist ('occupied') to the element's class everytime '=' sign is clicked.
+2. Click numbers check if the output contains 'occupied' class. 
+3. If yes, remove class and clear output. If no, output clicked number.
+```
