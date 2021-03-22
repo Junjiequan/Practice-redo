@@ -22,7 +22,8 @@ The biggest challenge was to prevent new numbers to merge with output results.
 Problem example:
 ```
 1 + 1 = 2,    1 = input / 2 = output 
-In this scenario, click 3 will change output and display 23 
+In this scenario, click 3 will change output and display 23. 
+As input will first appears in the output section then operator triggers function to send value into input section.
 ```
 Solution:
 ```
