@@ -21,7 +21,7 @@ The biggest challenge was to prevent new numbers to merge with output results.
 
 Problem example:
 ```
-input section  1 + 1 =
+input section  1 + 1 
 output section 2
 In this scenario, click 3 will change output and display 23. 
 As input will first appears in the output section then operator triggers function to send value into input section.
