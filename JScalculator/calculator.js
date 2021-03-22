@@ -30,7 +30,9 @@ const getNumArrays = Array.from(document.getElementsByClassName('number'));
 const getSOperatorArrays = Array.from(document.getElementsByClassName('operator'));
 const getSymArrays = Array.from(document.getElementsByClassName('symbols'));
 
-const keyBoardOperator = () =>{
+
+//Operator processing //Condition check 
+const runOperator = () =>{
     getSOperatorArrays.map((operator) =>{
         operator.addEventListener('click',()=>{
             let outputNum = reverseformatNum(getOutputNum());
@@ -71,7 +73,8 @@ const keyBoardOperator = () =>{
         })
     })
 }
-const keyBoardSym = () =>{
+//ClearEach and clearAll proceeding
+const runSymbols = () =>{
     getSymArrays.map((symbols) =>{
         symbols.addEventListener('click', ()=>{
             if(symbols.id == 'clear'){
@@ -86,7 +89,8 @@ const keyBoardSym = () =>{
         })
     })
 }
-const keyBoardNum = () =>{
+//Numbers input
+const runNumbers = () =>{
         getNumArrays.map((numbers)=>{
             numbers.addEventListener('click', ()=>{
                 if(outputNum.classList.contains('occupied')){
@@ -101,6 +105,6 @@ const keyBoardNum = () =>{
                 })
             })
     } 
-keyBoardNum();
-keyBoardOperator();
-keyBoardSym();
+runNumbers();
+runOperator();
+runSymbols();
