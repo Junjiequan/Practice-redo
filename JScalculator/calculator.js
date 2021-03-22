@@ -62,7 +62,6 @@ const runOperator = () =>{
                              document.getElementById('output').classList.add('occupied');
                           //if not just run over.
                         } else {
-                            
                             printOutputNum(result);
                             printPrevNumber('');
                             document.getElementById('output').classList.add('occupied');
@@ -70,7 +69,6 @@ const runOperator = () =>{
                     }  
                     // if operator is not = and output has value then just add it to prev number
                  }  else {
-                    
                     prevNum = prevNum + operator.innerText
                     printPrevNumber(prevNum);
                     printOutputNum('');
@@ -128,7 +126,6 @@ const runNumbers = () =>{
                 })
             })
     } 
-
 //run.
 runNumbers();
 runOperator();
