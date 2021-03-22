@@ -4,7 +4,6 @@ const outputNum = document.getElementById('output');
 const getPrevNumber = () =>{
     return historyNum.innerText;
 }
-console.log(typeof(historyNum.innerText));
 const printPrevNumber = (num) =>{
     historyNum.innerText = num;
 }
