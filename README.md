@@ -7,7 +7,7 @@ This way, I believe is the most effective method for me to improve.
 
 
 ## Rebuilt-projects display
->[Calculator(JS)](https://a331998513.github.io/Practice-redo/JScalculator/)  |  
+- [Calculator(JS)](https://a331998513.github.io/Practice-redo/JScalculator/)  |  
 
 ## My version vs tutorial  _(code comparison)_
 >[Calculator(JS)](https://github.com/a331998513/Practice-redo/blob/main/JScalculator/calculator.js) VS [Tutorial](https://github.com/abarna-codespot/A-simple-Calculator/blob/master/script.js) 
