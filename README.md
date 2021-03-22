@@ -1,5 +1,5 @@
 # Practice-redo (3rd month)
-able to follow tutorials doesn't mean you know how to build it from scratch. So, I decided to redo all the practices I have done.
+able to follow tutorials doesn't mean you know how to build it from scratch. So, I decided to redo all the free code camp projects I have done.
 
 However, for my current skill level it is unrealastic to create apps completely from scratch without referencing to any frame and logic of an app. So, the best way I can think of is, watch tutorial first, then customize the code and add new concepts as much as I can. 
 
