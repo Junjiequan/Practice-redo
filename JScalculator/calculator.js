@@ -1,35 +1,43 @@
 const historyNum = document.getElementById('inputsave');
 const outputNum = document.getElementById('output');
 // Output section
+
+//get input value
 const getPrevNumber = () =>{
     return historyNum.innerText;
 }
+//print input value
 const printPrevNumber = (num) =>{
     historyNum.innerText = num;
 }
+//get output value
 const getOutputNum = () =>{
     return outputNum.innerText;
 }
+//print output value && set character limits && add toLocalString('en') make numbers easy to read for users.
 const printOutputNum = (num) =>{
     if(num == '') outputNum.innerText = num;
     else if(outputNum.innerText.length <= 13){
         return outputNum.innerText = formatNum(num)
     }
 }
+//if anything goes wrong clear it. give numbers comma per thousand units.
 const formatNum = (num) =>{
     if(isNaN(num)) return '';
     let typeNumber = Number(num);
     let value = typeNumber.toLocaleString('en');
     return value;
 }
+//since we seperate numbers with comma, we need a function to remove the comma for calculation. 
 const reverseformatNum = (num) =>{
     return num.replace(/,/g,'');
 }
+
 //processing section
+//I am not quite sure if array.from step is necessary. I just wanted to make sure to get arrays.
 const getNumArrays = Array.from(document.getElementsByClassName('number'));
 const getSOperatorArrays = Array.from(document.getElementsByClassName('operator'));
 const getSymArrays = Array.from(document.getElementsByClassName('symbols'));
-
 
 //Operator processing //Condition check 
 const runOperator = () =>{
