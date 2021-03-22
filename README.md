@@ -15,7 +15,8 @@ This way, I believe is the most effective method for me to improve.
 
 
 ## Challenges
-### with Calculator
+
+### Calculator
 
 **The biggest challenge was to prevent new numbers to merge with output results. **
 
