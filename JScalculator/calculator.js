@@ -4,6 +4,7 @@ const outputNum = document.getElementById('output');
 const getPrevNumber = () =>{
     return historyNum.innerText;
 }
+console.log(typeof(historyNum.innerText));
 const printPrevNumber = (num) =>{
     historyNum.innerText = num;
 }
@@ -12,7 +13,7 @@ const getOutputNum = () =>{
 }
 const printOutputNum = (num) =>{
     if(num == '') outputNum.innerText = num;
-    else if(outputNum.innerText.length <= 14){
+    else if(outputNum.innerText.length <= 13){
         return outputNum.innerText = formatNum(num)
     }
 }
@@ -41,8 +42,8 @@ const keyBoardOperator = () =>{
                     if(!isNaN(prevNum[prevNum.length-1])){
                         let result = eval(prevNum);
                         let resultString = result.toString();
-                        if(resultString.length >= 14 ){
-                             printOutputNum(resultString.slice(0,13));
+                        if(resultString.length >= 12 ){
+                             printOutputNum(resultString.slice(0,12));
                              printPrevNumber('');
                         } else {
                             printOutputNum(result);
