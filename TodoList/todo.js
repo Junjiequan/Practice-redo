@@ -131,12 +131,7 @@ const removeLocalTodo = (data) =>{
 document.addEventListener('DOMContentLoaded',getLocalTodo)
 todoBtn.addEventListener('click', addTodo);
 todoUl.addEventListener('click', deleteTodo)
+optionFilter.addEventListener('click', filterTodo)
+optionFilter.addEventListener('touchstart', filterTodo)
 
-
-
-if(optionFilter.addEventListener){
-    optionFilter.addEventListener('click', filterTodo);
-} else if (optionFilter.attachEvent){
-    optionFilter.attachEvent("onclick",filterTodo)
-}
 
