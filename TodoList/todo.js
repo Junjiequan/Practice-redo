@@ -35,19 +35,18 @@ const addTodo = (event)=>{
     todoInput.value = '';
     }
 }
-
 //delete todo function
 const deleteTodo = (event) =>{
     let item = event.target;
     if (item.classList[0] == 'list-btn2'){
     item.closest('.list-item').classList.toggle('fall')
-    removeLocalTodo(item)
      const remove = () =>{item.closest('.list-item').remove()}
      setTimeout(remove, 700)
     }
-    if (item.classList[0] == 'list-btn1'){
+    if (item.classList[0] === 'list-btn1'){
         item.closest('.list-item').classList.toggle('list-done')
     }
+    removeLocalTodo(item)
 }
 const filterTodo = (event)=>{
     let option = todoUl.childNodes;
@@ -85,7 +84,6 @@ const localTodoSave = (data) =>{
     localStorage.setItem('todos', JSON.stringify(todos));
 }
 //get data from local
-
 const getLocalTodo = () =>{
     let todos;
     if (localStorage.getItem('todos') === null){
@@ -125,8 +123,6 @@ const removeLocalTodo = (data) =>{
         todos = JSON.parse(localStorage.getItem('todos'))
     }
     const theValue = data.closest('li').children[0].value
-    console.log(theValue);
-    console.log(todos.indexOf(theValue));
     todos.splice(todos.indexOf(theValue),1);
     localStorage.setItem('todos', JSON.stringify(todos));
 }
