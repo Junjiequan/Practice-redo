@@ -53,6 +53,10 @@ i{
         flex-direction:column;
         justify-content:left;
         }
+    .form-container{
+        margin-top:2rem;
+        margin-bottom:2rem;
+    }
     .todo-wrapper{
         padding-bottom:20px;
         margin-right:0;
@@ -110,6 +114,9 @@ select{
     .selection option{
         font-size:14px;
     }
+    .select-container select{
+        height:1.8rem;
+    }
 }
 
 /*list section*/
@@ -131,6 +138,8 @@ select{
     justify-content:center;
     margin:4px auto;
     transition: all 0.7s ease-in-out;
+    background:white;
+    border-radius:5px;
 }
 .list-text,.list-item button{
     height:2.5rem;
@@ -151,8 +160,9 @@ select{
 }
 /*responsive*/
 @media only screen and (max-width:480px){
+
     .list-text{
-        width:22vh;
+        width:220px;
     }
 }
 /*list-button effects*/
