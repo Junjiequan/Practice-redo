@@ -1,11 +1,10 @@
-# Practice-redo (3rd month)
+# Practice-redo and some more(3rd month)
 well.
 
 ## Rebuilt list
 - [Calculator(JS)](https://a331998513.github.io/Practice-redo/JScalculator/) 
+- [TodoList(JS)](https://a331998513.github.io/Practice-redo/TodoList/)
 
-## My version vs tutorial  _(code comparison)_
->[Calculator(JS)](https://github.com/a331998513/Practice-redo/blob/main/JScalculator/calculator.js) VS [Tutorial](https://github.com/abarna-codespot/A-simple-Calculator/blob/master/script.js) 
 
 
 
