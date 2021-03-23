@@ -174,7 +174,7 @@ select{
     border-radius:0 5px 5px 0;
 }
 /*responsive*/
-@media only screen and (max-width:480px){
+@media only screen and (max-width:500px){
     .list-text{
         width:100%;
     }
