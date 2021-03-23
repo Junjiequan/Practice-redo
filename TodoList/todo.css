@@ -106,7 +106,7 @@ form{
     justify-content:center;
     margin:8px auto;
     width:95%;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.7s ease-in-out;
 }
 @media screen and (max-width:480px){
     .list-text{
@@ -142,4 +142,9 @@ form{
 .list-btn2{
     color:rgb(168, 17, 17);
 }
-
+/*list-text toggle overwrite*/
+.list-done{
+    opacity:0.4;
+    text-decoration:line-through;
+    text-decoration-color:black;
+}

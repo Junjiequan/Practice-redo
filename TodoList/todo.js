@@ -38,6 +38,9 @@ const deleteTodo = (event) =>{
     if (item.classList[0] == 'list-btn2'){
         item.closest('.list-item').remove();
     }
+    if (item.classList[0] == 'list-btn1'){
+        item.closest('.list-item').classList.toggle('list-done')
+    }
 }
 
 //event listener
