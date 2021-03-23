@@ -51,6 +51,7 @@ const deleteTodo = (event) =>{
 }
 const filterTodo = (event)=>{
     let option = todoUl.childNodes;
+    console.log(option)
     option.forEach((todo)=>{
         switch(event.target.value){
             case "all":
@@ -132,6 +133,6 @@ document.addEventListener('DOMContentLoaded',getLocalTodo)
 todoBtn.addEventListener('click', addTodo);
 todoUl.addEventListener('click', deleteTodo)
 optionFilter.addEventListener('click', filterTodo)
-optionFilter.addEventListener('touchend', filterTodo)
+optionFilter.addEventListener('change', filterTodo)
 
 
