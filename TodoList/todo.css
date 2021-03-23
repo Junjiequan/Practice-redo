@@ -1,0 +1,141 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    font-family: 'Kanit', sans-serif;
+}
+.container{
+    margin:10% 0;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:white;
+}
+.header{
+    font-size:4rem;
+}
+form{
+    display:flex;
+    min-height:15vh;
+    max-width:460px;
+}
+i{
+    pointer-events:none;
+}
+/* input && selection part*/
+.todo-wrapper
+,.todo-another
+{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+@media only screen and (max-width:480px){
+form{
+    display:flex;
+    flex-direction:column;
+    justify-content:left;
+    }
+.todo-wrapper{
+    padding-bottom:20px;
+    
+}
+}
+.text,
+.btn,
+.text-another,
+.btn-another{
+    height:2.5rem;
+    background:white;
+    border:none;
+    outline:none;
+    padding:5px 10px;
+    font-size:1.8rem;
+}
+.btn-another{
+    z-index:10;
+}
+.text{
+    width:80%;
+}
+.btn, .btn-another{
+    font-size:2.1rem;
+    display:flex;
+    align-items:center;
+    background:rgb(105, 94, 155);
+    cursor:pointer;
+}
+.btn:hover{
+    background:rgb(17, 93, 235);
+}
+.btn i, .btn-another i{
+    color:rgb(255, 255, 255);
+}
+/*selection part*/
+.text-another{
+    margin-left:20px;
+    width:120px;
+}
+
+/*list section*/
+.todo-container{
+    max-width:480px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+}
+.list-container{
+    list-style:none;
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+}
+.list-item{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:8px auto;
+    width:95%;
+    transition: all 0.3s ease-in-out;
+}
+@media screen and (max-width:480px){
+    .list-text{
+        width:70%;
+    }
+}
+
+.list-text,.list-item button{
+    height:2.5rem;
+    background:white;
+    border:none;
+    outline:none;
+    padding:5px 10px;
+    font-size:1.8rem;
+}
+.list-text {
+    min-width:83%;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+/*list-button effects*/
+.list-item button{
+    cursor:pointer;
+    transition:all 0.2s ease;
+}
+.list-item button:hover{
+    transition:all 0.2s ease;
+    color:#302b63
+}
+.list-btn1{
+    color:rgb(211, 144, 0);
+}
+.list-btn2{
+    color:rgb(168, 17, 17);
+}
+
