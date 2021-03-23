@@ -47,6 +47,7 @@ const deleteTodo = (event) =>{
         item.closest('.list-item').classList.toggle('list-done')
     }
     removeLocalTodo(item)
+    
 }
 const filterTodo = (event)=>{
     let option = todoUl.childNodes;
@@ -130,9 +131,12 @@ const removeLocalTodo = (data) =>{
 document.addEventListener('DOMContentLoaded',getLocalTodo)
 todoBtn.addEventListener('click', addTodo);
 todoUl.addEventListener('click', deleteTodo)
+optionFilter.addEventListener('click', filterTodo)
+
 
 if(optionFilter.addEventListener){
     optionFilter.addEventListener('click', filterTodo);
 } else if (optionFilter.attachEvent){
     optionFilter.attachEvent("onclick",filterTodo)
 }
+
