@@ -15,11 +15,14 @@
         <form class="form-container">
             <div class="todo-wrapper">
                 <input id="todo-input" class="text" >
-                <button id="todo-btn" class="btn" type="submit" ><i class="fa fa-plus-square" aria-hidden="true"></i></button>
+                <button id="todo-btn" class="btn" type="submit" ><i class="fa fa-plus" aria-hidden="true"></i></button>
             </div>
-            <div class="todo-another">
-                <input class="text-another" placeholder="None" disabled />
-                <button class="btn-another" type="button" ><i class="fa fa-caret-down" aria-hidden="true"></i></button>
+            <div class="select-container">
+                <select name ="Todo" class="selection" >
+                    <option value="incomplete">All</option>
+                    <option value="complete">Finished</option>
+                    <option value="waiting">Incomplete</option>
+                </select>
             </div>
         </form>
         <div class="todo-container">

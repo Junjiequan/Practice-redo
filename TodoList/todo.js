@@ -38,7 +38,7 @@ const deleteTodo = (event) =>{
     if (item.classList[0] == 'list-btn2'){
     item.closest('.list-item').classList.toggle('fall')
      const remove = () =>{item.closest('.list-item').remove()}
-     setTimeout(remove, 1500)
+     setTimeout(remove, 700)
     }
     if (item.classList[0] == 'list-btn1'){
         item.closest('.list-item').classList.toggle('list-done')
