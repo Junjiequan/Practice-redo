@@ -132,7 +132,6 @@ const removeLocalTodo = (data) =>{
 document.addEventListener('DOMContentLoaded',getLocalTodo)
 todoBtn.addEventListener('click', addTodo);
 todoUl.addEventListener('click', deleteTodo)
-optionFilter.addEventListener('click', filterTodo)
 optionFilter.addEventListener('change', filterTodo)
 
 
