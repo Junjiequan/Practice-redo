@@ -3,8 +3,9 @@ const todoInput = document.getElementById('todo-input')
 const todoBtn = document.getElementById('todo-btn')
 const todoUl = document.querySelector('.list-container')
 const todoDelete = document.querySelector('.list-btn2')
+const optionFilter = document.querySelector('.todo-filter')
 
-//function
+//add todo function
 const addTodo = (event)=>{
     event.preventDefault();
     if(todoInput.value !== '' && !(todoInput.value.match(/^\s/))){
@@ -33,6 +34,7 @@ const addTodo = (event)=>{
     }
 }
 
+//delete todo function
 const deleteTodo = (event) =>{
     let item = event.target;
     if (item.classList[0] == 'list-btn2'){
@@ -44,8 +46,31 @@ const deleteTodo = (event) =>{
         item.closest('.list-item').classList.toggle('list-done')
     }
 }
-
+const filterTodo = (event)=>{
+    let option = todoUl.childNodes;
+    option.forEach((todo)=>{
+        switch(event.target.value){
+            case "all":
+                todo.style.display = "flex";
+                break;
+            case "done":
+                if(todo.classList.contains('list-done')){
+                    todo.style.display = "flex";
+                } else {
+                    todo.style.display = "none";
+                }
+                break;
+            case "no":
+                if(!todo.classList.contains('list-done')){
+                    todo.style.display = "flex";
+                } else {
+                    todo.style.display = "none"
+                }
+                break;
+        }
+    })
+}
 //event listener
 todoBtn.addEventListener('click', addTodo);
 todoUl.addEventListener('click', deleteTodo)
-
+optionFilter.addEventListener('click', filterTodo)

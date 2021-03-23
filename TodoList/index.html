@@ -18,29 +18,22 @@
                 <button id="todo-btn" class="btn" type="submit" ><i class="fa fa-plus" aria-hidden="true"></i></button>
             </div>
             <div class="select-container">
-                <select name ="Todo" class="selection" >
-                    <option value="incomplete">All</option>
-                    <option value="complete">Finished</option>
-                    <option value="waiting">Incomplete</option>
+                <select name ="Todo" class="todo-filter" >
+                    <option value="all">All</option>
+                    <option value="done">Finished</option>
+                    <option value="no">Incomplete</option>
                 </select>
             </div>
         </form>
         <div class="todo-container">
-            <ul class="list-container">
-                <!-- <li class="list-item list-done">
-                    <input class="list-text" value="">
-                    <button class="list-btn1"><i class="fa fa-check" aria-hidden="true"></i></button>
-                    <button class="list-btn2"><i class="fa fa-times" aria-hidden="true"></i></button>
-                </li>
-                <li class="list-item">
-                    <input class="list-text">
-                    <button class="list-btn1"><i class="fa fa-check" aria-hidden="true"></i></button>
-                    <button class="list-btn2"><i class="fa fa-times" aria-hidden="true"></i></button>
-                </li> -->
-            </ul>
+            <ul class="list-container"></ul>
         </div>
     </main>
-
+<!-- <li class="list-item list-done">
+    <input class="list-text" value="">
+    <button class="list-btn1"><i class="fa fa-check" aria-hidden="true"></i></button>
+    <button class="list-btn2"><i class="fa fa-times" aria-hidden="true"></i></button>
+</li>-->
     <script src="./todo.js"></script>
 </body>
 </html>

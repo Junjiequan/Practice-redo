@@ -23,7 +23,7 @@ i{
 }
 .form-container{
     display:flex;
-    min-height:15vh;
+    min-height:10vh;
     max-width:82%;
 }
 /* input part*/
@@ -87,8 +87,9 @@ select{
     justify-content:flex-end;
     align-items:center;
     position:relative;
+    
 }
-.selection{
+.select-container select{
     height:2.5rem;
     border:none;
     outline:none;
@@ -113,7 +114,6 @@ select{
 
 /*list section*/
 .todo-container{
-    margin-top:20px;
     max-width:480px;
     display:flex;
     align-items:center;
