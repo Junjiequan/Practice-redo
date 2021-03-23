@@ -127,6 +127,7 @@ const removeLocalTodo = (data) =>{
     localStorage.setItem('todos', JSON.stringify(todos));
 }
 //event listener
+filterTodo();
 document.addEventListener('DOMContentLoaded',getLocalTodo)
 todoBtn.addEventListener('click', addTodo);
 todoUl.addEventListener('click', deleteTodo)
