@@ -151,7 +151,13 @@ i{
 }
 /*list-text toggle overwrite*/
 .list-done{
-    opacity:0.4;
+    opacity:0.5;
     text-decoration:line-through;
     text-decoration-color:black;
+}
+.fall{
+    transition: all 1s ease-in-out;
+    /* transform: translateY(8rem) rotate(30deg); */
+    transform: scale(0.2);
+    opacity:0;
 }
