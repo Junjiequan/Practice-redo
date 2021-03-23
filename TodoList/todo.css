@@ -57,6 +57,10 @@ form{
     padding:5px 10px;
     font-size:1.8rem;
 }
+.text-another{
+    font-family: 'Kanit', sans-serif;
+    font-size:1rem;
+}
 .btn-another{
     z-index:10;
 }
