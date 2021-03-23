@@ -1,5 +1,5 @@
 # Practice-redo and some more(3rd month)
-well.
+well. Every day is like a war against brain
 
 ## Rebuilt list
 - [Calculator(JS)](https://a331998513.github.io/Practice-redo/JScalculator/) 
