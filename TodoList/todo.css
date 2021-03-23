@@ -175,9 +175,8 @@ select{
 }
 /*responsive*/
 @media only screen and (max-width:480px){
-
     .list-text{
-        width:220px;
+        width:250px;
     }
 }
 /*list-button effects*/
