@@ -79,7 +79,6 @@ const setData = (data) =>{
     Storage.push(data);
     localStorage.setItem('Storage', JSON.stringify(Storage));
 }
-
 const getData = () =>{
     let Storage;
     if(localStorage.getItem('Storage') === null){
@@ -112,7 +111,6 @@ const getData = () =>{
     //return empty value ---------------
     })
 }
-
 const removeData = (target) =>{
     let Storage;
     if(localStorage.getItem('Storage') === null){
@@ -129,5 +127,3 @@ document.addEventListener('DOMContentLoaded',getData);
 todoButton.addEventListener('click', addTodoList);
 todoAddBox.addEventListener('click', addTodoDone);
 todoFilter.addEventListener('change', runTodoFilter);
-
-
