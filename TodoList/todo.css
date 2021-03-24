@@ -18,7 +18,21 @@ i{
     align-items:center;
     color:white;
 }
-.header{
+/*Animation*/
+span{
+    opacity:0;
+    transition: all 1s ease;
+}
+span.animation{
+    opacity:1;
+}
+
+/*for animation */
+.header1{
+    font-size:4rem;
+}
+/*regular*/
+.header2{
     font-size:4rem;
 }
 .form-container{
@@ -201,7 +215,7 @@ select{
     text-decoration-color:black;
 }
 .fall{
-    transition: all 0.7s ease-in-out;
+    transition: 0.7s ease-in-out;
     /* transform: translateY(8rem) rotate(30deg); */
     transform: scale(0.2);
     opacity:0;

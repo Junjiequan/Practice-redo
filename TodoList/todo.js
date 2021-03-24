@@ -1,14 +1,13 @@
-//selectors
+//todo selectors
 const todoInput = document.getElementById('todo-input')
 const todoBtn = document.getElementById('todo-btn')
 const todoUl = document.querySelector('.list-container')
 const todoDelete = document.querySelector('.list-btn2')
 const optionFilter = document.querySelector('.todo-filter')
-
 //add todo function
 const addTodo = (event)=>{
     event.preventDefault();
-    if(todoInput.value !== '' && !(todoInput.value.match(/^\s/))){
+    if(!(todoInput.value.match(/^\s|^$/))){
     const todoLi = document.createElement('LI');
     todoLi.classList.add('list-item');
 
@@ -128,6 +127,7 @@ const removeLocalTodo = (data) =>{
     todos.splice(todos.indexOf(theValue),1);
     localStorage.setItem('todos', JSON.stringify(todos));
 }
+
 //event listener
 document.addEventListener('DOMContentLoaded',getLocalTodo)
 todoBtn.addEventListener('click', addTodo);
@@ -135,3 +135,24 @@ todoUl.addEventListener('click', deleteTodo)
 optionFilter.addEventListener('change', filterTodo)
 
 
+
+
+//----------------------------font animation part----------------------
+//font selector
+const fontHead = document.querySelector('.header1');
+const fontSplit = fontHead.innerText.split("");
+fontHead.innerText = '';
+fontSplit.map(index=>{
+    fontHead.innerHTML = fontHead.innerHTML + "<span>" + index + "</span>";
+})
+//font animation function
+let char = 0;
+const action = () =>{
+    const span = fontHead.querySelectorAll('span')[char]
+    span.classList.add('animation')
+    if (++char >= fontSplit.length){
+        clearInterval(timer);
+    }
+}
+const timer = setInterval(action, 50);
+//----------------------------/font animation part----------------------
