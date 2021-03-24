@@ -1,0 +1,208 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    font-family: 'Kanit', sans-serif;
+}
+i{
+    pointer-events:none;
+}
+.container{
+    margin:5% 0;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:center;
+    color:white;
+}
+.header{
+    font-size:4rem;
+}
+.form-container{
+    display:flex;
+    min-height:10vh;
+    max-width:82%;
+}
+/* input part*/
+.todo-wrapper{
+    margin-right:1rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.text,
+.btn{
+    height:2.5rem;
+    background:white;
+    border:none;
+    outline:none;
+    padding:5px 10px;
+    font-size:1.3rem;
+}
+.btn i{
+    font-size:1.3rem;
+    color:rgb(255, 255, 255);
+}
+/* responsive column layout */
+@media only screen and (max-width:480px){
+    form{
+        display:flex;
+        flex-direction:column;
+        justify-content:left;
+        }
+    .form-container{
+        margin-top:2rem;
+        margin-bottom:2rem;
+    }
+    .todo-wrapper{
+        padding-bottom:20px;
+        margin-right:0;
+    }
+}
+/*border-shape*/
+.text{
+    border-radius:5px 0 0 5px;
+}
+.btn{
+    font-size:2.1rem;
+    display:flex;
+    align-items:center;
+    background:rgb(105, 94, 155);
+    transition:all 0.2s ease-in-out;
+    cursor:pointer;
+    border-radius:0 5px 5px 0;
+}
+.btn:hover{
+    transition:all 0.2s ease-in-out;
+    background:rgb(58, 47, 100);
+}
+/* second todo*/
+select{
+    appearance:none;
+    outline:none;
+    border:none;
+    width:8.5rem;
+    font-family: 'Kanit', sans-serif;
+    font-weight:bold;
+    color:rgb(77, 70, 116);
+}
+.select-container{
+
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    position:relative;
+}
+.select-container select{
+    height:2.5rem;
+    border:none;
+    outline:none;
+    padding: 0 0.8rem;
+    font-size:1.1rem;
+    border-radius:3px 3px 0 0;
+    cursor:pointer;
+}
+.select-container::after{
+    content:"\25BC";
+    color:rgb(105, 94, 155);
+    position:absolute;
+    right:3px;
+    bottom:20;
+    pointer-events: none;
+    
+}
+@media only screen and (max-width:480px){
+    .selection option{
+        z-index:10;
+        font-size:12px;
+    }
+    .select-container select{
+        height:1.8rem;
+    }
+}
+
+/*list section*/
+.todo-container{
+    margin-top:1rem;
+    min-width:470px;
+    min-height:3rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:5px;
+    background:rgba(20, 13, 32, 0.4);
+}
+@media only screen and (max-width:480px){
+    .todo-container{
+        min-width:90vw;
+    }
+}
+.list-container{
+    padding: 8px 6px;
+    list-style:none;
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+}
+.list-item{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:4px auto;
+    transition: all 0.7s ease-in-out;
+    background:white;
+    border-radius:5px;
+}
+.list-text,.list-item button{
+    height:2.5rem;
+    background:white;
+    border:none;
+    outline:none;
+    padding:5px 10px;
+    font-size:1.1rem;
+    font-weight:bold;
+}
+/*list & button shape*/
+.list-text{
+    width:365px;
+    border-radius:5px 0 0 5px;
+}
+.list-btn2{
+    border-radius:0 5px 5px 0;
+}
+/*responsive*/
+@media only screen and (max-width:500px){
+    .list-text{
+        width:100%;
+    }
+}
+/*list-button effects*/
+.list-item button{
+    cursor:pointer;
+    transition:all 0.2s ease;
+}
+.list-item button:hover{
+    transition:all 0.2s ease;
+    color:#302b63
+}
+.list-btn1{
+    color:rgb(211, 144, 0);
+}
+.list-btn2{
+    color:rgb(168, 17, 17);
+}
+/*list-text toggle overwrite*/
+.list-done{
+    opacity:0.5;
+    text-decoration:line-through;
+    text-decoration-color:black;
+}
+.fall{
+    transition: all 0.7s ease-in-out;
+    /* transform: translateY(8rem) rotate(30deg); */
+    transform: scale(0.2);
+    opacity:0;
+}
