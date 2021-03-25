@@ -12,7 +12,6 @@ const addTodo = (event)=>{
     todoLi.classList.add('list-item');
 
     const todoTxtInput = document.createElement('INPUT');
-    todoTxtInput.disabled = true;
     todoTxtInput.classList.add('list-text');
     
     const todoBtn1 = document.createElement('BUTTON');
@@ -25,6 +24,7 @@ const addTodo = (event)=>{
     
     //append it
     todoTxtInput.value = todoInput.value;
+    todoTxtInput.disabled = true;
     localTodoSave(todoInput.value);
     todoLi.appendChild(todoTxtInput);
     todoLi.appendChild(todoBtn1);
