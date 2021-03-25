@@ -3,7 +3,7 @@ well. Every day is like a war against brain
 
 ## Rebuilt list
 - [Calculator(JS)](https://a331998513.github.io/Practice-redo/JScalculator/) 
-- [TodoList(JS)](https://a331998513.github.io/Practice-redo/TodoList/) | [Tutorial](https://www.youtube.com/watch?v=Ttf3CEsEwMQ)
+- [TodoList(JS)](https://a331998513.github.io/Practice-redo/TodoList/)
 
 
 
